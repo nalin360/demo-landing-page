@@ -16,12 +16,9 @@
         button {
             border: none;
             color: $geryblue;
+            @include word-style($fweight: 400, $fontSize: 16px, $lineheight: 19px);
             background-color: transparent;
-            font-family: "Rubik";
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 19px;
+            
         }
     }
     .sign-in-up {
@@ -31,22 +28,15 @@
             padding-top: 22px;
             border: none;
             background-color: transparent;
-            font-family: "Rubik";
-            font-style: normal;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 19px;
+            @include word-style($fweight: 500, $fontSize: 16px, $lineheight: 19px);
+            
         }
         button:nth-child(2) {
             border: 1px solid $red;
             color: $red;
             padding: 7px 15px;
             border-radius: 50px;
-            font-family: "Rubik";
-            font-style: normal;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 19px;
+            @include word-style($fweight: 500, $fontSize: 16px, $lineheight: 19px);
         }
     }
 }
