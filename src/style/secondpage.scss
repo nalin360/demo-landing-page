@@ -1,0 +1,36 @@
+@import "./variablescolor";
+.secondpage {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    height: 100vh;
+    padding: 10px 100px 10px;
+    align-items: center;
+    justify-content: space-around;
+    .secondpage-img {
+        img {
+            width: 508.12px;
+            height: 414.71px;
+        }
+    }
+    .secondpage-content {
+        width: 40%;
+        h1 {
+            @include word-style($fweight: 500, $fontSize: 35px, $lineheight: 50px);
+        }
+        p {
+            @include word-style($fweight: 400, $fontSize: 16px, $lineheight: 30px);
+        }
+        .secondpage-content-div {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .secondpage-content-p-2 {
+            @include word-style($fweight: 400, $fontSize: 14px, $lineheight: 30px);
+            // img{
+            // }
+        }
+    }
+}
